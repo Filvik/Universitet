@@ -1,9 +1,13 @@
 public enum StudyProfile {
-    MEDECINA ("Медицина"),
+    MEDICINE ("Медицина"),
     ECONOMICA ("Экономика"),
     INFORMACIONNIE_TEHNOLOGII ("Информационные технологии"),
     TEHNIKA_I_TEHNOLOGIA ("Техника и технология"),
-    ISSCUSTVO ("Исскуство");
+    ISCUSSTVO ("Искусство"),
+    PHYSICS("Физика"),
+    LINGUISTICS("Лингвистика"),
+    MATHEMATICS("Математика");
+
 
     private final String profileName;
     StudyProfile(String profileName){

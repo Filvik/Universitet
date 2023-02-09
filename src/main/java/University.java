@@ -1,16 +1,11 @@
 public class University {
-    String id;
-    String fullName;
-    String shortName;
-    int yearOfFoundation;
-    StudyProfile mainProfile;
+    private String id;
+    private String fullName;
+    private String shortName;
+    private int yearOfFoundation;
+    private StudyProfile mainProfile;
 
-    public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainProfile) {
-        this.id = id;
-        this.fullName = fullName;
-        this.shortName = shortName;
-        this.yearOfFoundation = yearOfFoundation;
-        this.mainProfile = mainProfile;
+    public University() {
     }
 
     public String getId() {
@@ -55,12 +50,12 @@ public class University {
 
     @Override
     public String toString() {
-        return "University {" +
-                "id='" + id + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", shortName='" + shortName + '\'' +
-                ", yearOfFoundation=" + yearOfFoundation +
-                ", mainProfile=" + mainProfile +
-                '}';
+        return "University {\n" +
+                "id = " + id + "\n" +
+                "fullName = " + fullName + '\n' +
+                "shortName = " + shortName + '\n' +
+                "yearOfFoundation = " + yearOfFoundation + '\n' +
+                "mainProfile = " + mainProfile + '\n' +
+                "}\n";
     }
 }
