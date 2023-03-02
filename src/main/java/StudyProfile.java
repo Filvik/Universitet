@@ -9,7 +9,7 @@ public enum StudyProfile {
     MATHEMATICS("Математика");
 
 
-    private final String profileName;
+    final String profileName;
     StudyProfile(String profileName){
         this.profileName = profileName;
     }
