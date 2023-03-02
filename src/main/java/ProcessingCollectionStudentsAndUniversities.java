@@ -5,7 +5,6 @@ import java.util.stream.Collectors;
 
 public class ProcessingCollectionStudentsAndUniversities {
 
-
     //Метод преобразующий коллекции студентов и университетов в коллекцию класса Statistics.
     List<Statistics> statisticsConverter(List<Student> students, List<University> universities) {
 
