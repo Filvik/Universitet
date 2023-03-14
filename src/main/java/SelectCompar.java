@@ -1,11 +1,10 @@
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 public class SelectCompar {
     private SelectCompar() {
     }
 
-    private static final Logger log = LoggerFactory.getLogger(SelectCompar.class.getName());
+    private static final Logger log = Logger.getLogger(SelectCompar.class.getName());
 
     public static StudentComparator getMyComparatorForStudents(OptionsStudentCompar optionsStudentCompar){
 
@@ -22,7 +21,7 @@ public class SelectCompar {
 
             case StudentComparatorUniversityId -> optionsCompar = new StudentComparatorUniversityId();
 
-            default -> log.error("Введен некорректный тип компаратора!");
+            default -> log.severe("Введен некорректный тип компаратора!");
         }
         log.info("Выбран класс компаратора: "+ optionsCompar);
         return optionsCompar;
@@ -44,7 +43,7 @@ public class SelectCompar {
 
             case UniversityComparatorYearOfFoundation -> optionsCompar = new UniversityComparatorYearOfFoundation();
 
-            default -> log.error("Введен некорректный тип компаратора!");
+            default -> log.severe("Введен некорректный тип компаратора!");
         }
         log.info("Выбран класс компаратора: "+ optionsCompar);
         return optionsCompar;

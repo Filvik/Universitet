@@ -2,9 +2,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import java.util.logging.Logger;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
@@ -19,7 +17,7 @@ public class ReadingAFile {
     private ReadingAFile() {
     }
 
-    private static final Logger log = LoggerFactory.getLogger(ReadingAFile.class.getName());
+    private static final Logger log = Logger.getLogger(ReadingAFile.class.getName());
 
 
     public static List<Student> readFromExcelStudents() {
@@ -70,7 +68,7 @@ public class ReadingAFile {
             //Закрываем чтение файла.
             myExcelBookStudents.close();
         } catch (IOException exception) {
-            log.error("Ошибка " + exception);
+            log.severe("Ошибка " + exception);
         }
         log.info("Возвращаем получившуюся коллекцию студентов.");
         return collectionStudents;
@@ -122,7 +120,7 @@ public class ReadingAFile {
                             try {
                                 university.setMainProfile(StudyProfile.valueOf(cell.getStringCellValue()));
                             } catch (IllegalArgumentException exception) {
-                                log.error("Ошибка " + exception);
+                                log.warning("Ошибка " + exception);
                             }
                         }
                     }
@@ -133,7 +131,7 @@ public class ReadingAFile {
             //Закрываем чтение файла.
             myExcelBookUniversity.close();
         } catch (IOException exception) {
-            log.error("Ошибка " + exception);
+            log.severe("Ошибка " + exception);
         }
         log.info("Возвращаем получившуюся коллекцию университетов.");
         return collectionUniversity;

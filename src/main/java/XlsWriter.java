@@ -3,14 +3,11 @@ import java.io.OutputStream;
 import java.util.List;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import static java.lang.System.out;
+import java.util.logging.Logger;
 
 public class XlsWriter {
 
-    private static final Logger log = LoggerFactory.getLogger(XlsWriter.class.getName());
+    private static final Logger log = Logger.getLogger(XlsWriter.class.getName());
 
     void assemblyGenerationMethod(List<Statistics> collection, String thePathToTheFile) {
 
@@ -66,10 +63,10 @@ public class XlsWriter {
 
             // Создание файла по сгенерированной книге.
             workbook.write(fileOut);
-            log.info("Сгенерирован файл " + thePathToTheFile);
+            log.fine("Сгенерирован файл " + thePathToTheFile);
 
         } catch (Exception e) {
-            log.error("Ошибка " + e);
+            log.severe("Ошибка " + e);
         }
     }
 
@@ -94,6 +91,6 @@ public class XlsWriter {
             cell.setCellValue(statistic.getNumberOfUniversityByProfile());
             i++;
         }
-        log.info("Файл заполнен значениями!");
+        log.fine("Файл заполнен значениями!");
     }
 }

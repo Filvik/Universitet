@@ -1,8 +1,4 @@
-
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import java.util.logging.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
@@ -10,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class ProcessingCollectionStudentsAndUniversities {
 
-    private static final Logger log = LoggerFactory.getLogger(ProcessingCollectionStudentsAndUniversities.class.getName());
+    private static final Logger log = Logger.getLogger(ProcessingCollectionStudentsAndUniversities.class.getName());
 
     //Метод преобразующий коллекции студентов и университетов в коллекцию класса Statistics.
     List<Statistics> statisticsConverter(List<Student> students, List<University> universities) {
@@ -50,12 +46,12 @@ public class ProcessingCollectionStudentsAndUniversities {
                         } else {
                             decimal = BigDecimal.valueOf(avgExamScore[0] / counter[0]).setScale(3, RoundingMode.CEILING);
                         }
-                        log.info("Добавляем получившийся элемент статистики.");
+                        log.info("Добавляем в 'map' получившийся элемент статистики.");
                         return new Statistics(profile, decimal.doubleValue(), fullName, counter[0], fullName.size());
                     }).toList();
         }
         catch (Exception exception){
-            log.error("Ошибка " + exception);
+            log.severe("Ошибка " + exception);
             return null;
         }
     }
