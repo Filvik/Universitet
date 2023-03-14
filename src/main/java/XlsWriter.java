@@ -1,13 +1,20 @@
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.List;
-
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import static java.lang.System.out;
 
 public class XlsWriter {
+
+    private static final Logger log = LoggerFactory.getLogger(XlsWriter.class.getName());
+
     void assemblyGenerationMethod(List<Statistics> collection, String thePathToTheFile) {
-        //void assemblyGenerationMethod() throws IOException {
+
+        log.info("Получена коллекция из " + collection.size() + " элементов для заполнения нового файла.");
 
         try (OutputStream fileOut = new FileOutputStream(thePathToTheFile)) {
 
@@ -59,14 +66,17 @@ public class XlsWriter {
 
             // Создание файла по сгенерированной книге.
             workbook.write(fileOut);
+            log.info("Сгенерирован файл " + thePathToTheFile);
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            log.error("Ошибка " + e);
         }
     }
 
     //Метод заполнения коллекции.
     void populatingCollection(List<Statistics> collection,Sheet sheet) {
+
+        log.info("Заполнение значениями файла из коллекции.");
 
         int i = 1;
         for (Statistics statistic : collection) {
@@ -84,5 +94,6 @@ public class XlsWriter {
             cell.setCellValue(statistic.getNumberOfUniversityByProfile());
             i++;
         }
+        log.info("Файл заполнен значениями!");
     }
 }

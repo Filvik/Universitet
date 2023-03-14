@@ -2,6 +2,8 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,18 +12,28 @@ import java.util.*;
 
 public class ReadingAFile {
 
+    private static final String file = "D:\\Flash drive\\new Computer\\idea\\.gradle\\module_gradle\\universitet\\src\\main\\resources\\universityInfo.xlsx";
+    private static final String nameSheetStudents = "Студенты";
+    private static final String nameSheetUniversitets = "Университеты";
+
     private ReadingAFile() {
     }
 
+    private static final Logger log = LoggerFactory.getLogger(ReadingAFile.class.getName());
+
+
     public static List<Student> readFromExcelStudents() {
+
+        log.info("Получение коллекции студентов из файла.");
 
         List<Student> collectionStudents = new ArrayList<>();
 
         try {
             XSSFWorkbook myExcelBookStudents = new XSSFWorkbook(
-                    new FileInputStream("D:\\Флешка\\Перенос на новый комп\\idea\\.gradle\\module_gradle\\universitet\\src\\main\\resources\\universityInfo.xlsx"));
-            XSSFSheet myExcelSheet = myExcelBookStudents.getSheet("Студенты");
-
+                    new FileInputStream(file));
+            log.info("Читаем данные из файла " + file);
+            XSSFSheet myExcelSheet = myExcelBookStudents.getSheet(nameSheetStudents);
+            log.info("Читаем данные с листа " + nameSheetStudents);
             //Итератор по строке.
             Iterator<Row> rowIterator = myExcelSheet.iterator();
             //Пропускаем заголовок таблицы.
@@ -58,21 +70,25 @@ public class ReadingAFile {
             //Закрываем чтение файла.
             myExcelBookStudents.close();
         } catch (IOException exception) {
-            System.out.println("Ошибка " + exception);
+            log.error("Ошибка " + exception);
         }
+        log.info("Возвращаем получившуюся коллекцию студентов.");
         return collectionStudents;
     }
 
 
     public static List<University> readFromExcelUniversitets() {
 
+        log.info("Получение коллекции университетов из файла.");
+
         List<University> collectionUniversity = new ArrayList<>();
 
         try {
             XSSFWorkbook myExcelBookUniversity = new XSSFWorkbook(
-                    new FileInputStream("D:\\Флешка\\Перенос на новый комп\\idea\\.gradle\\module_gradle\\universitet\\src\\main\\resources\\universityInfo.xlsx"));
-            XSSFSheet myExcelSheet = myExcelBookUniversity.getSheet("Университеты");
-
+                    new FileInputStream(file));
+            log.info("Читаем данные из файла " + file);
+            XSSFSheet myExcelSheet = myExcelBookUniversity.getSheet(nameSheetUniversitets);
+            log.info("Читаем данные с листа " + nameSheetUniversitets);
             //Итератор по строке.
             Iterator<Row> rowIterator = myExcelSheet.iterator();
             //Пропускаем заголовок таблицы.
@@ -106,7 +122,7 @@ public class ReadingAFile {
                             try {
                                 university.setMainProfile(StudyProfile.valueOf(cell.getStringCellValue()));
                             } catch (IllegalArgumentException exception) {
-                                System.out.println("Неизвестный тип StudyProfile для " + university.getFullName());
+                                log.error("Ошибка " + exception);
                             }
                         }
                     }
@@ -117,8 +133,9 @@ public class ReadingAFile {
             //Закрываем чтение файла.
             myExcelBookUniversity.close();
         } catch (IOException exception) {
-            System.out.println("Ошибка " + exception);
+            log.error("Ошибка " + exception);
         }
+        log.info("Возвращаем получившуюся коллекцию университетов.");
         return collectionUniversity;
     }
 }

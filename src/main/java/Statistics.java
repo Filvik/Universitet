@@ -1,5 +1,4 @@
 import java.util.List;
-import java.util.OptionalDouble;
 
 public class Statistics {
     private StudyProfile mainProfile;

@@ -1,0 +1,61 @@
+[SelectCompar.getMyComparatorForStudents(SelectCompar.java:12)evel] 2023-03-14 12:44:15.740 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForStudents(SelectCompar.java:27)evel] 2023-03-14 12:44:15.744 [main] SelectCompar - Выбран класс компаратора: StudentComparatorFullName
+[SelectCompar.getMyComparatorForStudents(SelectCompar.java:12)evel] 2023-03-14 12:44:15.744 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForStudents(SelectCompar.java:27)evel] 2023-03-14 12:44:15.745 [main] SelectCompar - Выбран класс компаратора: StudentComparatorAvgExamScore
+[SelectCompar.getMyComparatorForStudents(SelectCompar.java:12)evel] 2023-03-14 12:44:15.752 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForStudents(SelectCompar.java:27)evel] 2023-03-14 12:44:15.752 [main] SelectCompar - Выбран класс компаратора: StudentComparatorUniversityId
+[SelectCompar.getMyComparatorForStudents(SelectCompar.java:12)evel] 2023-03-14 12:44:15.752 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForStudents(SelectCompar.java:27)evel] 2023-03-14 12:44:15.753 [main] SelectCompar - Выбран класс компаратора: StudentComparatorCurrentCorseNumber
+[ReadingAFile.readFromExcelStudents(ReadingAFile.java:27)evel] 2023-03-14 12:44:15.754 [main] ReadingAFile - Получение коллекции студентов из файла.
+[ReadingAFile.readFromExcelStudents(ReadingAFile.java:34)evel] 2023-03-14 12:44:16.426 [main] ReadingAFile - Читаем данные из файла D:\Flash drive\new Computer\idea\.gradle\module_gradle\universitet\src\main\resources\universityInfo.xlsx
+[ReadingAFile.readFromExcelStudents(ReadingAFile.java:36)evel] 2023-03-14 12:44:16.428 [main] ReadingAFile - Читаем данные с листа Студенты
+[ReadingAFile.readFromExcelStudents(ReadingAFile.java:75)evel] 2023-03-14 12:44:16.433 [main] ReadingAFile - Возвращаем получившуюся коллекцию студентов.
+[Main.lambda$main$0(Main.java:20)evel] 2023-03-14 12:44:16.433 [main] Main - Сортировка с использованием класса компаратора: StudentComparatorFullName
+[Main.lambda$main$0(Main.java:23)evel] 2023-03-14 12:44:16.444 [main] Main - Сортировка выполнена успешно!
+[Main.lambda$main$0(Main.java:20)evel] 2023-03-14 12:44:16.444 [main] Main - Сортировка с использованием класса компаратора: StudentComparatorAvgExamScore
+[Main.lambda$main$0(Main.java:23)evel] 2023-03-14 12:44:16.445 [main] Main - Сортировка выполнена успешно!
+[Main.lambda$main$0(Main.java:20)evel] 2023-03-14 12:44:16.445 [main] Main - Сортировка с использованием класса компаратора: StudentComparatorUniversityId
+[Main.lambda$main$0(Main.java:23)evel] 2023-03-14 12:44:16.446 [main] Main - Сортировка выполнена успешно!
+[Main.lambda$main$0(Main.java:20)evel] 2023-03-14 12:44:16.446 [main] Main - Сортировка с использованием класса компаратора: StudentComparatorCurrentCorseNumber
+[Main.lambda$main$0(Main.java:23)evel] 2023-03-14 12:44:16.447 [main] Main - Сортировка выполнена успешно!
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:32)evel] 2023-03-14 12:44:16.447 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:49)evel] 2023-03-14 12:44:16.448 [main] SelectCompar - Выбран класс компаратора: UniversityComparatorId
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:32)evel] 2023-03-14 12:44:16.449 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:49)evel] 2023-03-14 12:44:16.449 [main] SelectCompar - Выбран класс компаратора: UniversityComparatorYearOfFoundation
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:32)evel] 2023-03-14 12:44:16.449 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:49)evel] 2023-03-14 12:44:16.450 [main] SelectCompar - Выбран класс компаратора: UniversityComparatorFullName
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:32)evel] 2023-03-14 12:44:16.450 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:49)evel] 2023-03-14 12:44:16.451 [main] SelectCompar - Выбран класс компаратора: UniversityComparatorShortName
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:32)evel] 2023-03-14 12:44:16.451 [main] SelectCompar - Необходимо выбрать класс компаратора.
+[SelectCompar.getMyComparatorForUniversity(SelectCompar.java:49)evel] 2023-03-14 12:44:16.451 [main] SelectCompar - Выбран класс компаратора: UniversityComparatorMainProfile
+[ReadingAFile.readFromExcelUniversitets(ReadingAFile.java:82)evel] 2023-03-14 12:44:16.452 [main] ReadingAFile - Получение коллекции университетов из файла.
+[ReadingAFile.readFromExcelUniversitets(ReadingAFile.java:89)evel] 2023-03-14 12:44:16.479 [main] ReadingAFile - Читаем данные из файла D:\Flash drive\new Computer\idea\.gradle\module_gradle\universitet\src\main\resources\universityInfo.xlsx
+[ReadingAFile.readFromExcelUniversitets(ReadingAFile.java:91)evel] 2023-03-14 12:44:16.480 [main] ReadingAFile - Читаем данные с листа Университеты
+[ReadingAFile.readFromExcelUniversitets(ReadingAFile.java:138)evel] 2023-03-14 12:44:16.484 [main] ReadingAFile - Возвращаем получившуюся коллекцию университетов.
+[Main.lambda$main$1(Main.java:36)evel] 2023-03-14 12:44:16.485 [main] Main - Сортировка с использованием класса компаратора: UniversityComparatorId
+[Main.lambda$main$1(Main.java:39)evel] 2023-03-14 12:44:16.490 [main] Main - Сортировка выполнена успешно!
+[Main.lambda$main$1(Main.java:36)evel] 2023-03-14 12:44:16.490 [main] Main - Сортировка с использованием класса компаратора: UniversityComparatorYearOfFoundation
+[Main.lambda$main$1(Main.java:39)evel] 2023-03-14 12:44:16.490 [main] Main - Сортировка выполнена успешно!
+[Main.lambda$main$1(Main.java:36)evel] 2023-03-14 12:44:16.490 [main] Main - Сортировка с использованием класса компаратора: UniversityComparatorFullName
+[Main.lambda$main$1(Main.java:39)evel] 2023-03-14 12:44:16.491 [main] Main - Сортировка выполнена успешно!
+[Main.lambda$main$1(Main.java:36)evel] 2023-03-14 12:44:16.491 [main] Main - Сортировка с использованием класса компаратора: UniversityComparatorShortName
+[Main.lambda$main$1(Main.java:39)evel] 2023-03-14 12:44:16.491 [main] Main - Сортировка выполнена успешно!
+[Main.lambda$main$1(Main.java:36)evel] 2023-03-14 12:44:16.491 [main] Main - Сортировка с использованием класса компаратора: UniversityComparatorMainProfile
+[Main.lambda$main$1(Main.java:39)evel] 2023-03-14 12:44:16.491 [main] Main - Сортировка выполнена успешно!
+[ReadingAFile.readFromExcelStudents(ReadingAFile.java:27)evel] 2023-03-14 12:44:16.492 [main] ReadingAFile - Получение коллекции студентов из файла.
+[ReadingAFile.readFromExcelStudents(ReadingAFile.java:34)evel] 2023-03-14 12:44:16.511 [main] ReadingAFile - Читаем данные из файла D:\Flash drive\new Computer\idea\.gradle\module_gradle\universitet\src\main\resources\universityInfo.xlsx
+[ReadingAFile.readFromExcelStudents(ReadingAFile.java:36)evel] 2023-03-14 12:44:16.512 [main] ReadingAFile - Читаем данные с листа Студенты
+[ReadingAFile.readFromExcelStudents(ReadingAFile.java:75)evel] 2023-03-14 12:44:16.513 [main] ReadingAFile - Возвращаем получившуюся коллекцию студентов.
+[ReadingAFile.readFromExcelUniversitets(ReadingAFile.java:82)evel] 2023-03-14 12:44:16.514 [main] ReadingAFile - Получение коллекции университетов из файла.
+[ReadingAFile.readFromExcelUniversitets(ReadingAFile.java:89)evel] 2023-03-14 12:44:16.531 [main] ReadingAFile - Читаем данные из файла D:\Flash drive\new Computer\idea\.gradle\module_gradle\universitet\src\main\resources\universityInfo.xlsx
+[ReadingAFile.readFromExcelUniversitets(ReadingAFile.java:91)evel] 2023-03-14 12:44:16.531 [main] ReadingAFile - Читаем данные с листа Университеты
+[ReadingAFile.readFromExcelUniversitets(ReadingAFile.java:138)evel] 2023-03-14 12:44:16.532 [main] ReadingAFile - Возвращаем получившуюся коллекцию университетов.
+[ProcessingCollectionStudentsAndUniversities.statisticsConverter(ProcessingCollectionStudentsAndUniversities.java:18)evel] 2023-03-14 12:44:16.533 [main] ProcessingCollectionStudentsAndUniversities - Получаем из коллекции студентов и университетов коллекцию статистики.
+[ProcessingCollectionStudentsAndUniversities.lambda$statisticsConverter$6(ProcessingCollectionStudentsAndUniversities.java:53)evel] 2023-03-14 12:44:16.545 [main] ProcessingCollectionStudentsAndUniversities - Добавляем получившийся элемент статистики.
+[ProcessingCollectionStudentsAndUniversities.lambda$statisticsConverter$6(ProcessingCollectionStudentsAndUniversities.java:53)evel] 2023-03-14 12:44:16.546 [main] ProcessingCollectionStudentsAndUniversities - Добавляем получившийся элемент статистики.
+[ProcessingCollectionStudentsAndUniversities.lambda$statisticsConverter$6(ProcessingCollectionStudentsAndUniversities.java:53)evel] 2023-03-14 12:44:16.547 [main] ProcessingCollectionStudentsAndUniversities - Добавляем получившийся элемент статистики.
+[ProcessingCollectionStudentsAndUniversities.lambda$statisticsConverter$6(ProcessingCollectionStudentsAndUniversities.java:53)evel] 2023-03-14 12:44:16.547 [main] ProcessingCollectionStudentsAndUniversities - Добавляем получившийся элемент статистики.
+[XlsWriter.assemblyGenerationMethod(XlsWriter.java:17)evel] 2023-03-14 12:44:16.549 [main] XlsWriter - Получена коллекция из 4 элементов для заполнения нового файла.
+[XlsWriter.populatingCollection(XlsWriter.java:79)evel] 2023-03-14 12:44:16.607 [main] XlsWriter - Заполнение значениями файла из коллекции.
+[XlsWriter.populatingCollection(XlsWriter.java:97)evel] 2023-03-14 12:44:16.612 [main] XlsWriter - Файл заполнен значениями!
+[XlsWriter.assemblyGenerationMethod(XlsWriter.java:69)evel] 2023-03-14 12:44:16.697 [main] XlsWriter - Сгенерирован файл GenerationExcel.xlsx
