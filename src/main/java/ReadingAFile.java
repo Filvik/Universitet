@@ -20,11 +20,11 @@ public class ReadingAFile {
     private static final Logger log = Logger.getLogger(ReadingAFile.class.getName());
 
 
-    public static List<Student> readFromExcelStudents() {
+    public static ArrayList<Student> readFromExcelStudents() {
 
         log.info("Получение коллекции студентов из файла.");
 
-        List<Student> collectionStudents = new ArrayList<>();
+        ArrayList<Student> collectionStudents = new ArrayList<>();
 
         try {
             XSSFWorkbook myExcelBookStudents = new XSSFWorkbook(
@@ -75,11 +75,11 @@ public class ReadingAFile {
     }
 
 
-    public static List<University> readFromExcelUniversitets() {
+    public static ArrayList<University> readFromExcelUniversitets() {
 
         log.info("Получение коллекции университетов из файла.");
 
-        List<University> collectionUniversity = new ArrayList<>();
+        ArrayList<University> collectionUniversity = new ArrayList<>();
 
         try {
             XSSFWorkbook myExcelBookUniversity = new XSSFWorkbook(

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-03-25T17:51:10.968691200Z</date>
+  <millis>1679766670968</millis>
+  <nanos>691200</nanos>
+  <sequence>0</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelStudents</method>
+  <thread>1</thread>
+  <message>Получение коллекции студентов из файла.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.747127800Z</date>
+  <millis>1679766671747</millis>
+  <nanos>127800</nanos>
+  <sequence>1</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelStudents</method>
+  <thread>1</thread>
+  <message>Читаем данные из файла D:\Flash drive\new Computer\idea\.gradle\module_gradle\universitet\src\main\resources\universityInfo.xlsx</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.755141100Z</date>
+  <millis>1679766671755</millis>
+  <nanos>141100</nanos>
+  <sequence>2</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelStudents</method>
+  <thread>1</thread>
+  <message>Читаем данные с листа Студенты</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.761128200Z</date>
+  <millis>1679766671761</millis>
+  <nanos>128200</nanos>
+  <sequence>3</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelStudents</method>
+  <thread>1</thread>
+  <message>Возвращаем получившуюся коллекцию студентов.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.761128200Z</date>
+  <millis>1679766671761</millis>
+  <nanos>128200</nanos>
+  <sequence>4</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelUniversitets</method>
+  <thread>1</thread>
+  <message>Получение коллекции университетов из файла.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.786127600Z</date>
+  <millis>1679766671786</millis>
+  <nanos>127600</nanos>
+  <sequence>5</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelUniversitets</method>
+  <thread>1</thread>
+  <message>Читаем данные из файла D:\Flash drive\new Computer\idea\.gradle\module_gradle\universitet\src\main\resources\universityInfo.xlsx</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.787127600Z</date>
+  <millis>1679766671787</millis>
+  <nanos>127600</nanos>
+  <sequence>6</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelUniversitets</method>
+  <thread>1</thread>
+  <message>Читаем данные с листа Университеты</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.789128800Z</date>
+  <millis>1679766671789</millis>
+  <nanos>128800</nanos>
+  <sequence>7</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelUniversitets</method>
+  <thread>1</thread>
+  <message>Возвращаем получившуюся коллекцию университетов.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.789128800Z</date>
+  <millis>1679766671789</millis>
+  <nanos>128800</nanos>
+  <sequence>8</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelStudents</method>
+  <thread>1</thread>
+  <message>Получение коллекции студентов из файла.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.812129500Z</date>
+  <millis>1679766671812</millis>
+  <nanos>129500</nanos>
+  <sequence>9</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelStudents</method>
+  <thread>1</thread>
+  <message>Читаем данные из файла D:\Flash drive\new Computer\idea\.gradle\module_gradle\universitet\src\main\resources\universityInfo.xlsx</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.812129500Z</date>
+  <millis>1679766671812</millis>
+  <nanos>129500</nanos>
+  <sequence>10</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelStudents</method>
+  <thread>1</thread>
+  <message>Читаем данные с листа Студенты</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.814128800Z</date>
+  <millis>1679766671814</millis>
+  <nanos>128800</nanos>
+  <sequence>11</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelStudents</method>
+  <thread>1</thread>
+  <message>Возвращаем получившуюся коллекцию студентов.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.814128800Z</date>
+  <millis>1679766671814</millis>
+  <nanos>128800</nanos>
+  <sequence>12</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelUniversitets</method>
+  <thread>1</thread>
+  <message>Получение коллекции университетов из файла.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.835128500Z</date>
+  <millis>1679766671835</millis>
+  <nanos>128500</nanos>
+  <sequence>13</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelUniversitets</method>
+  <thread>1</thread>
+  <message>Читаем данные из файла D:\Flash drive\new Computer\idea\.gradle\module_gradle\universitet\src\main\resources\universityInfo.xlsx</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.835128500Z</date>
+  <millis>1679766671835</millis>
+  <nanos>128500</nanos>
+  <sequence>14</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelUniversitets</method>
+  <thread>1</thread>
+  <message>Читаем данные с листа Университеты</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.836127800Z</date>
+  <millis>1679766671836</millis>
+  <nanos>127800</nanos>
+  <sequence>15</sequence>
+  <logger>ReadingAFile</logger>
+  <level>INFO</level>
+  <class>ReadingAFile</class>
+  <method>readFromExcelUniversitets</method>
+  <thread>1</thread>
+  <message>Возвращаем получившуюся коллекцию университетов.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.837129700Z</date>
+  <millis>1679766671837</millis>
+  <nanos>129700</nanos>
+  <sequence>16</sequence>
+  <logger>ProcessingCollectionStudentsAndUniversities</logger>
+  <level>INFO</level>
+  <class>ProcessingCollectionStudentsAndUniversities</class>
+  <method>statisticsConverter</method>
+  <thread>1</thread>
+  <message>Получаем из коллекции студентов и университетов коллекцию статистики.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.842128500Z</date>
+  <millis>1679766671842</millis>
+  <nanos>128500</nanos>
+  <sequence>17</sequence>
+  <logger>ProcessingCollectionStudentsAndUniversities</logger>
+  <level>INFO</level>
+  <class>ProcessingCollectionStudentsAndUniversities</class>
+  <method>lambda$statisticsConverter$6</method>
+  <thread>1</thread>
+  <message>Добавляем в 'map' получившийся элемент статистики.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.842128500Z</date>
+  <millis>1679766671842</millis>
+  <nanos>128500</nanos>
+  <sequence>18</sequence>
+  <logger>ProcessingCollectionStudentsAndUniversities</logger>
+  <level>INFO</level>
+  <class>ProcessingCollectionStudentsAndUniversities</class>
+  <method>lambda$statisticsConverter$6</method>
+  <thread>1</thread>
+  <message>Добавляем в 'map' получившийся элемент статистики.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.843128600Z</date>
+  <millis>1679766671843</millis>
+  <nanos>128600</nanos>
+  <sequence>19</sequence>
+  <logger>ProcessingCollectionStudentsAndUniversities</logger>
+  <level>INFO</level>
+  <class>ProcessingCollectionStudentsAndUniversities</class>
+  <method>lambda$statisticsConverter$6</method>
+  <thread>1</thread>
+  <message>Добавляем в 'map' получившийся элемент статистики.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.843128600Z</date>
+  <millis>1679766671843</millis>
+  <nanos>128600</nanos>
+  <sequence>20</sequence>
+  <logger>ProcessingCollectionStudentsAndUniversities</logger>
+  <level>INFO</level>
+  <class>ProcessingCollectionStudentsAndUniversities</class>
+  <method>lambda$statisticsConverter$6</method>
+  <thread>1</thread>
+  <message>Добавляем в 'map' получившийся элемент статистики.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.844129600Z</date>
+  <millis>1679766671844</millis>
+  <nanos>129600</nanos>
+  <sequence>21</sequence>
+  <logger>WritingXMLFilesFromJava</logger>
+  <level>INFO</level>
+  <class>WritingJSONFilesFromJava</class>
+  <method>convertObject</method>
+  <thread>1</thread>
+  <message>Запись JSON-файлов для Java-класса ObjectWrappers</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:11.863128400Z</date>
+  <millis>1679766671863</millis>
+  <nanos>128400</nanos>
+  <sequence>22</sequence>
+  <logger>JsonUtil</logger>
+  <level>INFO</level>
+  <class>JsonUtil</class>
+  <method>serializationForObjectWrappers</method>
+  <thread>1</thread>
+  <message>Объект класса ObjectWrappers сериализуется.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.031607900Z</date>
+  <millis>1679766672031</millis>
+  <nanos>607900</nanos>
+  <sequence>23</sequence>
+  <logger>WritingXMLFilesFromJava</logger>
+  <level>INFO</level>
+  <class>WritingXMLFilesFromJava</class>
+  <method>convertObject</method>
+  <thread>1</thread>
+  <message>Запись XML-файлов для Java-класса ObjectWrappers</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.033610500Z</date>
+  <millis>1679766672033</millis>
+  <nanos>610500</nanos>
+  <sequence>24</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>find</method>
+  <thread>1</thread>
+  <message>Searching jaxb.properties</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.034607Z</date>
+  <millis>1679766672034</millis>
+  <nanos>607000</nanos>
+  <sequence>25</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.JAXBContextFactory</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.035611300Z</date>
+  <millis>1679766672035</millis>
+  <nanos>611300</nanos>
+  <sequence>26</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.035611300Z</date>
+  <millis>1679766672035</millis>
+  <nanos>611300</nanos>
+  <sequence>27</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.context.factory</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.035611300Z</date>
+  <millis>1679766672035</millis>
+  <nanos>611300</nanos>
+  <sequence>28</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.036607700Z</date>
+  <millis>1679766672036</millis>
+  <nanos>607700</nanos>
+  <sequence>29</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>Checking system property javax.xml.bind.JAXBContext</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.036607700Z</date>
+  <millis>1679766672036</millis>
+  <nanos>607700</nanos>
+  <sequence>30</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>getSystemProperty</method>
+  <thread>1</thread>
+  <message>  not found</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.037608800Z</date>
+  <millis>1679766672037</millis>
+  <nanos>608800</nanos>
+  <sequence>31</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>firstByServiceLoaderDeprecated</method>
+  <thread>1</thread>
+  <message>Searching META-INF/services</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.038609600Z</date>
+  <millis>1679766672038</millis>
+  <nanos>609600</nanos>
+  <sequence>32</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>firstByServiceLoaderDeprecated</method>
+  <thread>1</thread>
+  <message>Configured factorty class:com.sun.xml.bind.v2.ContextFactory</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.039610100Z</date>
+  <millis>1679766672039</millis>
+  <nanos>610100</nanos>
+  <sequence>33</sequence>
+  <logger>javax.xml.bind</logger>
+  <level>FINE</level>
+  <class>javax.xml.bind.ContextFinder</class>
+  <method>newInstance</method>
+  <thread>1</thread>
+  <message>loaded com.sun.xml.bind.v2.ContextFactory from jar:file:/C:/Users/sanch/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.4/jaxb-impl-2.3.4.jar!/com/sun/xml/bind/v2/ContextFactory.class</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.043611600Z</date>
+  <millis>1679766672043</millis>
+  <nanos>611600</nanos>
+  <sequence>34</sequence>
+  <logger>com.sun.xml.bind.v2.ContextFactory</logger>
+  <level>FINE</level>
+  <class>com.sun.xml.bind.v2.ContextFactory</class>
+  <method>createContext</method>
+  <thread>1</thread>
+  <message>Property com.sun.xml.bind.XmlAccessorFactoryis not active.  Using JAXB's implementation</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.143579300Z</date>
+  <millis>1679766672143</millis>
+  <nanos>579300</nanos>
+  <sequence>35</sequence>
+  <logger>JsonUtil</logger>
+  <level>INFO</level>
+  <class>JsonUtil</class>
+  <method>deserializationForObjectWrappers</method>
+  <thread>1</thread>
+  <message>Объект класса ObjectWrappers десериализуется.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.176768100Z</date>
+  <millis>1679766672176</millis>
+  <nanos>768100</nanos>
+  <sequence>36</sequence>
+  <logger>WritingXMLFilesFromJava</logger>
+  <level>INFO</level>
+  <class>WritingJSONFilesFromJava</class>
+  <method>convertObject</method>
+  <thread>1</thread>
+  <message>Запись JSON-файлов для Java-класса ObjectWrappers</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.177764800Z</date>
+  <millis>1679766672177</millis>
+  <nanos>764800</nanos>
+  <sequence>37</sequence>
+  <logger>JsonUtil</logger>
+  <level>INFO</level>
+  <class>JsonUtil</class>
+  <method>serializationForObjectWrappers</method>
+  <thread>1</thread>
+  <message>Объект класса ObjectWrappers сериализуется.</message>
+</record>
+<record>
+  <date>2023-03-25T17:51:12.183766100Z</date>
+  <millis>1679766672183</millis>
+  <nanos>766100</nanos>
+  <sequence>38</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Its good</message>
+</record>
+</log>

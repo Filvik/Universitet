@@ -1,15 +1,24 @@
-import com.google.gson.annotations.SerializedName;
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import javax.xml.bind.annotation.*;
 
+@XmlRootElement(name = "universityEntry")
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(propOrder = { "id", "fullName","mainProfile" })
+@JsonPropertyOrder({"id", "fullName","mainProfile"})
 public class University {
-    @SerializedName("idUniversity")
+    @XmlElement(name = "universityId")
     private String id;
-    @SerializedName("fullNameUniversity")
+    @XmlElement(name = "universityName")
     private String fullName;
-    @SerializedName("shortNameUniversity")
+    @XmlTransient
+    @JsonIgnore
     private String shortName;
-    @SerializedName("yearOfFoundationUniversity")
+    @XmlTransient
+    @JsonIgnore
     private int yearOfFoundation;
-    @SerializedName("mainProfileUniversity")
+    @XmlElement(name = "universityProfile")
     private StudyProfile mainProfile;
 
     public University() {
@@ -23,7 +32,7 @@ public class University {
         this.mainProfile = mainProfile;
     }
 
-
+    @JsonGetter("universityId")
     public String getId() {
         return id;
     }
@@ -31,7 +40,7 @@ public class University {
     public void setId(String id) {
         this.id = id;
     }
-
+    @JsonGetter("universityName")
     public String getFullName() {
         return fullName;
     }
@@ -55,7 +64,7 @@ public class University {
     public void setYearOfFoundation(int yearOfFoundation) {
         this.yearOfFoundation = yearOfFoundation;
     }
-
+    @JsonGetter("universityProfile")
     public StudyProfile getMainProfile() {
         return mainProfile;
     }

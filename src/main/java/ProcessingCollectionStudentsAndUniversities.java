@@ -9,7 +9,7 @@ public class ProcessingCollectionStudentsAndUniversities {
     private static final Logger log = Logger.getLogger(ProcessingCollectionStudentsAndUniversities.class.getName());
 
     //Метод преобразующий коллекции студентов и университетов в коллекцию класса Statistics.
-    List<Statistics> statisticsConverter(List<Student> students, List<University> universities) {
+    static List<Statistics> statisticsConverter(List<Student> students, List<University> universities) {
 
         log.info("Получаем из коллекции студентов и университетов коллекцию статистики.");
 
@@ -44,7 +44,7 @@ public class ProcessingCollectionStudentsAndUniversities {
                         if (counter[0] == 0) {
                             decimal = BigDecimal.valueOf(0);
                         } else {
-                            decimal = BigDecimal.valueOf(avgExamScore[0] / counter[0]).setScale(3, RoundingMode.CEILING);
+                            decimal = BigDecimal.valueOf(avgExamScore[0] / counter[0]).setScale(2, RoundingMode.CEILING);
                         }
                         log.info("Добавляем в 'map' получившийся элемент статистики.");
                         return new Statistics(profile, decimal.doubleValue(), fullName, counter[0], fullName.size());

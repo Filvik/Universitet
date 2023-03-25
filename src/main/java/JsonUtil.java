@@ -1,57 +1,104 @@
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class JsonUtil {
 
-    private JsonUtil() {
+    public JsonUtil() {
     }
 
+    private static Type type;
     private final static Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    private static final Logger log = Logger.getLogger(JsonUtil.class.getName());
+    private static Class nameClass;
 
-    public static String serializationForStudent(Student student) {
+    //Сериализация объекта неопределенного класса.
+    public static String serializationObject(Object object) {
 
-        return gson.toJson(student);
+        log.info("Сериализация объекта класса : " + object.getClass());
+
+        return gson.toJson(object, nameClass = object.getClass());
+
     }
 
-    public static Student deserializationForStudent(String prettyJsonString) {
+    //Десериализация объекта неопределенного класса.
+    public static Object deserializationObject(String prettyJsonString) {
 
-        return gson.fromJson(prettyJsonString, Student.class);
+        log.info("Десериализация объекта класса : " + nameClass);
+
+        return gson.fromJson(prettyJsonString, nameClass);
     }
 
-    public static String serializationForUniversity(University university) {
+    //Сериализация коллекции объктов неопределенного класса.
+    public static String serializationForObjectCollection(List<?> objects) {
 
-        return gson.toJson(university);
+        log.info("Сериализация коллекции объектов класса : " + objects.get(0).getClass());
+
+        if (objects.get(0).getClass() == Student.class) {
+            type = new TypeToken<List<Student>>() {
+            }.getType();
+
+        } else if (objects.get(0).getClass() == University.class) {
+            type = new TypeToken<List<University>>() {
+            }.getType();
+
+        } else if (objects.get(0).getClass() == Statistics.class) {
+            type = new TypeToken<List<Statistics>>() {
+            }.getType();
+
+        } else {
+            log.severe("Объект не может быть сериализован!");
+            return null;
+        }
+
+        return gson.toJson(objects, type);
     }
 
-    public static University deserializationForUniversity(String prettyJsonString) {
+    //Десериализация коллекции объктов неопределенного класса.
+    public static ArrayList<?> deserializationForObjectCollection(String prettyJsonString) {
 
-        return gson.fromJson(prettyJsonString, University.class);
+        log.info("Десериализация коллекции объектов типа : " + type);
+
+        return gson.fromJson(prettyJsonString, type);
     }
 
+    //Сериализация созданной классовой структуры.
+    public static String serializationForObjectWrappers(ObjectWrappers wrapper) {
 
-    public static String serializationForStudentsCollection(List<Student> student) {
+        log.info("Объект класса ObjectWrappers сериализуется.");
 
-        return gson.toJson(student);
+        ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
+        String jsonString = null;
+        try {
+            jsonString = ow.writeValueAsString(wrapper);
+        } catch (JsonProcessingException exception) {
+            log.severe("Ошибка " + exception);
+        }
+        return jsonString;
     }
 
-    public static ArrayList<Student> deserializationForStudentsCollection(String prettyJsonString) {
+    //Десериализация созданной классовой структуры.
+    public static ObjectWrappers deserializationForObjectWrappers(String prettyJsonString) {
 
-        return gson.fromJson(prettyJsonString, new TypeToken<ArrayList<Student>>() {
-        }.getType());
-    }
+        log.info("Объект класса ObjectWrappers десериализуется.");
 
-    public static String serializationForUniversityCollection(List<University> university) {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
-        return gson.toJson(university);
-    }
-
-    public static ArrayList<University> deserializationForUniversityCollection(String prettyJsonString) {
-
-        return gson.fromJson(prettyJsonString, new TypeToken<ArrayList<University>>() {
-        }.getType());
+        try {
+            return mapper.readValue(prettyJsonString, ObjectWrappers.class);
+        } catch (JsonProcessingException exception) {
+            log.severe("Ошибка " + exception);
+            return null;
+        }
     }
 }
